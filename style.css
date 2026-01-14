@@ -12,4 +12,6 @@ h2 {
 
 .underline {
   text-decoration: underline;
+  color: red;
+  font-weight: bold;
 }
