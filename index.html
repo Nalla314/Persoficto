@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+
+  <h1>Área restrita 🔒</h1>
+
+  <input type="password" id="senha" placeholder="Senha">
+  <button onclick="entrar()">Entrar</button>
+
+  <p id="msg"></p>
+
+  <script>
+    function entrar() {
+      const senhaCorreta = "1234";
+      const senha = document.getElementById("senha").value;
+
+      if (senha === senhaCorreta) {
+        window.location.href = "site.html";
+      } else {
+        document.getElementById("msg").innerText = "Senha errada ❌";
+      }
+    }
+  </script>
+
+</body>
+</html>
