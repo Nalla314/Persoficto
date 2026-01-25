@@ -15,4 +15,5 @@ button {
     margin: 20px auto;    /* distância do topo + centralização horizontal */
     text-align: center;   /* centraliza texto dentro do botão */
     padding: 10px 20px;
+    cursor: pointer;
 }
