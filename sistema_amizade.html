@@ -3,12 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Amizade</title>
+    <style>
+        td {
+    text-align: center;
+}
+    </style>
 </head>
 <body>
-    <div>
+    <section>
         <h1>Sistema de Amizade</h1>
-        <p>Enquanto o Sistema de Amizade não estiver 100% polido é feito de forma original, ele seguirá o mesmo sistema de Stardew Valley.</p>
-        <p>Cada Persoficto terá 14 corações. Cada um, individualmente, vale 250 pontos de amizade. Com 8 corações cheios, poderá pedir o Persoficto em namoro; e com 10 corações, poderá pedir o Persoficto em casamento.</p>
-    </div>
+        <h2>Quantidade de corações</h2>
+        <p>Amizade: ♥️♥️♥️♥️♥️♥️♥️♥️ (8)</p>
+        <p>Namoro: ♥️♥️♥️♥️ (4)</p>
+        <p>Casamento: ♥️♥️♥️♥️ (4)</p>
+        <p>São 16 corações no total.</p>
+        <p>♥️ (um coração individual)=100 pontos de amizade (PA)</p>
+        <p>Total de PA: 1600</p>
+    </section>
+    
+    <section>
+        <h2>Como aumentar Amizade</h2>
+        <ul>
+            <li>Conversando (+4 PA por conversa, caso o Persoficto esteja ocupado, como desenhando ou se exercitando. Caso contrário, +8 PA)</li>
+            <li>Completando missão de entrega (+60 PA)</li>
+            <li>Dando-lhes um presente que eles gostam (<em>Ver <a href="#presente"> Presentes</a></em>)</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Como diminuir Amizade</h2>
+        <ul>
+            <li>Não conversando (<em>Ver <a href="#decaimento">Decaimento</a></em>)</li>
+            <li>Dando-lhes um presente que eles não gostam (<em>Ver <a href="#presente"> Presentes</a></em>)</li>
+        </ul>
+        <h3 id="decaimento">Decaimento</h3>
+        <table border="1">
+            <tr>
+                <th>Tipo de Relação</th>
+                <th>Taxa de Decaimento</th>
+                <th>Quando a queda para</th>
+            </tr>
+            <tr>
+                <td>Desconhecido</td>
+                <td>&mdash;</td>
+                <td>&mdash;</td>
+            </tr>
+            <tr>
+                <td>Amizade</td>
+                <td>-0,8 PA/dia</td>
+                <td>Ao atingir 8 corações</td>
+            </tr>
+            <tr>
+                <td>Namoro</td>
+                <td>-2,4 PA/dia</td>
+                <td>Ao atingir 12 corações</td>
+            </tr>
+            <tr>
+                <td>Noivado</td>
+                <td>-3,2 PA/dia</td>
+                <td>Ao atingir 12 corações</td>
+            </tr>
+            <tr>
+                <td>Casado</td>
+                <td>-8 PA/dia</td>
+                <td>Nunca para</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h3 id="presente">Presentes</h3>
+        <table border="1">
+            <tr>
+               <th>Gosto de presente</th>
+               <th>Normal</th>
+               <th>Troca de Presentes (5x)</th>
+               <th>Aniversário (8x)</th> 
+            </tr>
+            <tr>
+                <td>Ama</td>
+                <td>+32 PA</td>
+                <td>+160 PA</td>
+                <td>+256 PA</td>
+            </tr>
+            <tr>
+                <td>Gosta</td>
+                <td>+18 PA</td>
+                <td>+90 PA</td>
+                <td>+144 PA</td>
+            </tr>
+            <tr>
+                <td>Neutro</td>
+                <td>+8 PA</td>
+                <td>+40 PA</td>
+                <td>+64 PA</td>
+            </tr>
+            <tr>
+                <td>Desgosta</td>
+                <td>-8 PA</td>
+                <td>-40 PA</td>
+                <td>-64 PA</td>
+            </tr>
+            <tr>
+                <td>Odeia</td>
+                <td>-16 PA</td>
+                <td>-80 PA</td>
+                <td>-128 PA</td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>
