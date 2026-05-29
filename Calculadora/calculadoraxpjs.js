@@ -10,9 +10,9 @@ calcularxp.addEventListener("click", () => {
     let xp;
 
     // Verifica se o nível é válido
-    if (n < 1 || n > 100 || isNaN(n)) {
-        xp = "Digite um nível válido entre 1 e 100!";
-    } else if (n === 100) {
+    if (n < 1 || n > 20 || isNaN(n)) {
+        xp = "Digite um nível válido entre 1 e 20!";
+    } else if (n === 20) {
         xp = "MÁXIMO!"
     } else {
         // Calcula XP baseado na velocidade
